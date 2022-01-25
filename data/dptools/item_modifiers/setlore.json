@@ -1,0 +1,56 @@
+[
+	{
+	  "function": "minecraft:set_damage",
+	  "damage": 1,
+	  "add": false
+	},
+	{
+	  "function": "minecraft:copy_nbt",
+	  "source": {
+		"type": "minecraft:storage",
+		"source": "dptools:armor"
+	  },
+	  "ops": [
+		{
+		  "source": "TMPDUR",
+		  "target": "current_d",
+		  "op": "replace"
+		}
+	  ]
+	},
+	{
+	  "function": "minecraft:set_lore",
+	  "entity": "this",
+	  "lore": [
+		[
+		  {
+			"translate": "item.durability",
+			"with": [
+			  {
+				"score": {
+				  "name": "$TEMP_DURABILITY",
+				  "objective": "carm.val"
+				},
+				"color": "white",
+				"bold": false,
+				"italic": false
+			  },
+			  {
+				"score": {
+				  "name": "$TEMP_DURABILITY2",
+				  "objective": "carm.val"
+				},
+				"bold": false,
+				"italic": false
+			  }
+			],
+			"color": "white",
+			"bold": false,
+			"italic": false
+		  }
+		]
+	  ],
+	  "replace": false
+	}
+  ]
+  
