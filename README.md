@@ -7,6 +7,9 @@ This datapack still needs the original resourcepack to properly function.
 
 ## Added Features
 
+### Translation  
+The lore for the durability now properly works with any language that is supported by mojang.  
+  
 ### Mending
 Mending armors with custom durability is now available.  
 If you have mending armor on, gained xp points will be converted to armor durability.  
