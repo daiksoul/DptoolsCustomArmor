@@ -1,7 +1,7 @@
 # DptoolsCustomArmor
 
 This is a fork of TheMoneyRaider's datapack tools custom armor.  
-All rights for the original datapack and the resourcepack belongs to them  
+All rights for the original datapack belongs to them  
 Original pmc page : https://www.planetminecraft.com/data-pack/custom-armor-method/  
 This datapack still needs the original resourcepack to properly function.  
 
