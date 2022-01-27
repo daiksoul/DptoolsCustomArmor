@@ -28,12 +28,12 @@ You can specify the id or/and NBT tags.
 
 Specifying an id  
 ```
-give @p leather_chestplate{carmor:1b,current_d:300,max_d:300,repair_item:{id:"minecraft:amethyst_shard"}}
+give @p leather_chestplate{carmor:1b,current_d:300,max_d:300,repair_item:{id:"minecraft:amethyst_shard"},display:{Lore:['""']}}
 ```  
 
 Specifying NBT tags
 ```
-give @p leather_chestplate{carmor:1b,current_d:300,max_d:300,repair_item:{tag:{foo:"var",Slow:1b}}}  
+give @p leather_chestplate{carmor:1b,current_d:300,max_d:300,repair_item:{tag:{foo:"var",Slow:1b}},display:{Lore:['""']}}  
 and the repair item would be  
 give @p clay_ball{cmat:{foo:"var",Slow:1b}}
 ```
