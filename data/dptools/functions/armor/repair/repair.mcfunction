@@ -14,3 +14,6 @@ tag @p[tag=carm.repair_own] remove repair_own
 function dptools:armor/repair/repair2
 playsound minecraft:block.anvil.use master @a[distance=..4]
 scoreboard players reset $REP_MATCOUNT carm.val
+
+#anvil break
+execute if predicate dptools:100_12perc run function dptools:armor/repair/breakanvil
