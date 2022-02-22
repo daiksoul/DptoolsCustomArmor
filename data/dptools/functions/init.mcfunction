@@ -10,4 +10,4 @@ scoreboard objectives add carm.equ dummy
 
 scoreboard players set $REP_4 carm.val 4
 
-data merge storage dptools:armor {}
+data merge storage dptools:cdur {}

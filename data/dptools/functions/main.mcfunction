@@ -1,7 +1,8 @@
-# function dptools:motion/mainmotion
-#function dptools:menu/mainmenu
-#function dptools:player_inventory/esmain
-# function dptools:god/system/maintimefreeze
-# function dptools:player_storage/main
-# execute as @a unless entity @s[scores={STORAGEID=1..}] run function dptools:player_storage/storageid
-function dptools:armor/main
+#Check if a player has a custom armor piece.
+execute as @a[nbt={Inventory:[{tag:{carmor:1b}}]}] at @s run function dptools:test
+
+#Check if a player has a custom armor piece with mending.
+execute as @a at @s unless score @s carm.xp1 = @s carm.xp2 run function dptools:mend_test
+
+#Check if an thrown item is a custom armor and is on a anvil
+execute as @e[type=item,nbt={Item:{tag:{carmor:1b}}}] at @s if block ~ ~-1 ~ #minecraft:anvil run function dptools:repair_test
