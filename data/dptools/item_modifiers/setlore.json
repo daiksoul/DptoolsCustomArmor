@@ -13,7 +13,7 @@
 	  "ops": [
 		{
 		  "source": "TMPDUR",
-		  "target": "current_d",
+		  "target": "cdur.current_d",
 		  "op": "replace"
 		}
 	  ]
